@@ -1,0 +1,10 @@
+Application Version: ${nanzhou.version}
+Spring Boot Version: ${spring-boot.version}
+   ███████   ██    ██
+  ██░░░░░██ ░░██  ██
+ ██     ░░██ ░░████
+░██      ░██  ░░██
+░██      ░██   ░██
+░░██     ██    ░██
+ ░░███████     ░██
+  ░░░░░░░      ░░
