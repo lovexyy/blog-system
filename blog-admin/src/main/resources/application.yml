@@ -1,0 +1,26 @@
+server:
+  port: 8081
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog-admin?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+mybatis-plus:
+  #mybatis-plus配置控制台打印完整带参数SQL语句
+  configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+blog:
+  jwt:
+    # 加密秘钥
+    secret: 9d93782912df11ed81710242ac110004
+    # 过期时间 token 有效期7天 单位秒
+    expire: 604800
+    header: Authorization
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
+    database: 6
